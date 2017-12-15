@@ -1,0 +1,4 @@
+- name: ELK_Vagrant_VM
+  ram: 8192
+  ip: 192.168.50.31
+  network_type: private
