@@ -13,9 +13,9 @@ echo "                     Install Elastic Search 6.0                           
 echo "################################################################################"
 echo 
 echo
-sudo wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.0.1.rpm
-sudo rpm -Uvh elasticsearch-6.0.1.rpm
-sudo rm -rf elasticsearch-6.0.1.rpm
+sudo wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.8.9.rpm
+sudo rpm -Uvh elasticsearch-6.8.9.rpm
+sudo rm -rf elasticsearch-6.8.9.rpm
 sudo systemctl daemon-reload
 sudo systemctl enable elasticsearch
 sudo systemctl start elasticsearch
@@ -42,9 +42,9 @@ echo "##########################################################################
 echo 
 echo
 
-sudo wget https://artifacts.elastic.co/downloads/kibana/kibana-6.0.1-x86_64.rpm
-sudo rpm -Uvh kibana-6.0.1-x86_64.rpm
-sudo rm -rf kibana-6.0.1-x86_64.rpm
+sudo wget https://artifacts.elastic.co/downloads/kibana/kibana-6.8.9-x86_64.rpm
+sudo rpm -Uvh kibana-6.8.9-x86_64.rpm
+sudo rm -rf kibana-6.8.9-x86_64.rpm
 sudo systemctl daemon-reload
 sudo systemctl enable kibana
 sudo systemctl start kibana
@@ -56,8 +56,8 @@ echo "                     Install File Beat                                    
 echo "################################################################################"
 echo 
 echo
-sudo curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-6.1.0-x86_64.rpm
-sudo rpm -vi filebeat-6.1.0-x86_64.rpm
+sudo curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-6.8.9-x86_64.rpm
+sudo rpm -vi filebeat-6.8.9-x86_64.rpm
 
 echo
 echo
